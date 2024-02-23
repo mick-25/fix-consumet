@@ -1,0 +1,35 @@
+{
+  "name": "stremio-consumet-addon",
+  "version": "1.0.1",
+  "description": "Provides anime and asian movies from the Consumet API",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "start": "node dist/server.js",
+    "start:dev": "cross-env NODE_ENV=dev nodemon src/server.ts"
+  },
+  "keywords": [
+    "stremio",
+    "stremio addon",
+    "consumet"
+  ],
+  "author": "Sleeyax",
+  "license": "MIT",
+  "dependencies": {
+    "@consumet/extensions": "^1.5.4",
+    "phin": "^3.7.0",
+    "stremio-addon-sdk": "^1.6.10"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^20.11.8",
+    "@types/phin": "^3.4.0",
+    "@types/stremio-addon-sdk": "^1.6.10",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
